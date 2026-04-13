@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="manifest" href="manifest.json">
     <title>Portfolio</title>
     
     
@@ -339,6 +340,12 @@
     <p id="success-msg" style="display:none; color:#22c55e; margin-top:10px;">
     ✅ Message ready! WhatsApp opened successfully.
 </p>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
 
 
 </body>
